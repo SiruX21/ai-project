@@ -2,6 +2,11 @@
 
 This project implements a Deep Q-Network (DQN) agent to play Flappy Bird using PyTorch.
 
+## Documentation
+
+- **[DOCUMENTATION.md](DOCUMENTATION.md)**: Comprehensive technical documentation explaining how the system works
+- **[PRESENTATION_GUIDE.md](PRESENTATION_GUIDE.md)**: Guide for preparing and delivering the presentation
+
 ## Project Structure
 
 - `flappy.py` - Original Flappy Bird game
