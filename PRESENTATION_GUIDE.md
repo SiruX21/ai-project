@@ -92,6 +92,14 @@ This guide helps you prepare a 10-minute presentation covering all rubric criter
 - "Best score: 100+ pipes after 5000+ episodes"
 - "Training shows clear learning progression"
 
+**Generating Charts:**
+- Use `python generate_progress_charts.py` to create all visualization charts
+- This generates 4 charts:
+  1. `baseline_comparison.png` - Random vs Trained agent
+  2. `training_progression.png` - Improvement across iterations
+  3. `feature_importance.png` - Ablation study showing feature importance
+  4. `reliability_hist.png` - Score distribution histogram
+
 #### 3.2 Performance Metrics (1 minute)
 **What to cover:**
 - Mean/max/min scores
@@ -104,6 +112,7 @@ This guide helps you prepare a 10-minute presentation covering all rubric criter
 - "Final mean score: 20-30 pipes"
 - "Max score: 50-100+ pipes"
 - "Significant improvement over random policy (score 0)"
+- Use `baseline_comparison.png` to show the dramatic improvement
 
 #### 3.3 Qualitative Analysis (30 seconds)
 **What to cover:**
@@ -196,11 +205,16 @@ This guide helps you prepare a 10-minute presentation covering all rubric criter
 
 ### Essential Visuals
 - Architecture diagram (network structure)
-- Learning curves (scores over time)
+- Learning curves (scores over time) - use `iterative_training_curves.png`
 - State representation diagram
 - Training process flowchart
 - Performance metrics table
 - Screenshots from game
+- **Progress charts** - Generate using `python generate_progress_charts.py`:
+  - Baseline comparison (Random vs Trained)
+  - Training progression across iterations
+  - Feature importance (ablation study)
+  - Reliability distribution histogram
 
 ### Slide Count Recommendation
 - **Total**: 10-12 slides (allows ~1 minute per slide)
@@ -358,4 +372,5 @@ A: "We'd try Double DQN to reduce overestimation, prioritized replay to focus on
 7. **Individual grading**: Even though it's a group project
 
 Good luck! 🎮🤖
+
 
